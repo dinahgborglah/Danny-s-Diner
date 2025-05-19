@@ -9,7 +9,7 @@ The goal is to analyze this data to gain insights into customer behavior, popula
 
 --Source: https://8weeksqlchallenge.com/ 
 
---Tool Used:SSMS (Microsoft SQL Server)
+--Tool Used: SSMS (Microsoft SQL Server)
 
 
 --Schema SQL:--

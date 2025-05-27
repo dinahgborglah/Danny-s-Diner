@@ -1,0 +1,9 @@
+select 
+s.customer_id,
+ m.product_name,
+  m.price, sum(price) as total_amount, 
+  sum( case when m.product_name='sushi' then m.price *20 else m.price *10 end ) as total_points 
+  from sales s 
+  join menu m 
+  on s.product_id=m.product_id 
+  group by s.customer_id, m.product_name, m.price;

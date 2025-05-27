@@ -1,0 +1,9 @@
+select 
+m.product_id, 
+product_name, 
+count(product_name) as most_popular_item
+ from menu m 
+ left join sales s 
+ on m.product_id=s.product_id 
+ group by m.product_id, product_name 
+ order by most_popular_item desc;

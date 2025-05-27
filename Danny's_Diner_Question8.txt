@@ -1,0 +1,14 @@
+select 
+s.customer_id, 
+m.product_name, 
+count(m.product_name) as total_items,
+ sum(price) as amount_spent,
+  max(s.order_date) as items_purchased_before_membership, 
+  b.join_date 
+  from sales s 
+  join menu m 
+  on s.product_id = m.product_id 
+  join members b 
+  on s.customer_id = b.customer_id 
+  where s.order_date < b.join_date 
+  group by s.customer_id, m.product_name, b.join_date;

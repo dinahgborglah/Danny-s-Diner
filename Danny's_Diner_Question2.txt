@@ -1,0 +1,6 @@
+select 
+customer_id, 
+count(distinct order_date) as no_of_visits 
+from sales 
+group by customer_id 
+order by customer_id asc;

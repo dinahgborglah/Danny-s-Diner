@@ -1,0 +1,26 @@
+with 
+points as 
+( 
+    select 
+    s.customer_id,
+    s.order_date,
+    m.price,
+    m.product_name,
+    b.join_date,
+     case 
+     when 
+     s.order_date 
+     between b.join_date and (b.join_date + interval '6 days') 
+     then m.price * 20 when m.product_name ='sushi' 
+     then m.price *20 else m.price *10 end as total_points 
+     from sales s 
+     join menu m 
+     on s.product_id=m.product_id 
+     join members b 
+     on s.customer_id=b.customer_id 
+     where s.order_date <= '2025-01-31' ) 
+     select customer_id,
+      sum (total_points) as totalpoints 
+      from points 
+      where customer_id in ('A','B') 
+      group by customer_id;

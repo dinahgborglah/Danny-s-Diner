@@ -1,0 +1,8 @@
+select 
+product_name, 
+count(product_name) as no_of_purchases 
+from sales s 
+left join menu m 
+on s.product_id=m.product_id 
+group by product_name 
+order by no_of_purchases desc;

@@ -1,5 +1,9 @@
 #DANNY-S-DINER -CASE STUDY 1--
-This repository contain solutions to questions on Danny's Diner from 8weeksqlchallenge.com by Danny Ma.
+This repository contain solutions to questions on Danny's Diner from https://8weeksqlchallenge.com/ by Danny Ma.
+
+
+
+
 
 ##OVERVIEW :
 
@@ -8,16 +12,31 @@ Danny opened Danny’s Diner, a restaurant in 2021, serving his favorite Japanes
 The goal is to analyze this data to gain insights into customer behavior, popular menu items, and sales trends to help the restaurant grow and succeed.
 
 
+
+
+
 ###SOURCE : 
 https://8weeksqlchallenge.com/ 
 
+
+
+
+
 ###TOOLS USED : 
---SSMS (Microsoft SQL Server)
---Edit On DB Fiddle
---VScode Editor
+1. SSMS (Microsoft SQL Server)
+2. Edit On DB Fiddle
+3. VScode Editor
+
+
+
+
 
 ###SKILLS DEMONSTRATED :
---SQL
+1. SQL
+
+
+
+
 
 ##CASE STUDY QUESTIONS :
 

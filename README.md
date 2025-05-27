@@ -32,8 +32,9 @@ https://8weeksqlchallenge.com/
 
 
 ###SKILLS DEMONSTRATED :
-1. SQL
-
+1. Data Cleaning with SQL
+2. SQL Joins
+3. CTE
 
 
 

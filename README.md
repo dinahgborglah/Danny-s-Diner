@@ -1,4 +1,4 @@
-#DANNY-S-DINER -CASE STUDY 1--
+#DANNY-S-DINER -CASE STUDY 1 :
 This repository contain solutions to questions on Danny's Diner from https://8weeksqlchallenge.com/ by Danny Ma.
 
 
